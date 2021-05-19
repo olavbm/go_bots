@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "go_bots"
+version = "0.1.0"
+description = ""
+authors = ["Olav Markussen <olavmarkussen@hotmail.no>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+black = "^21.5b1"
+mypy = "^0.812"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
