@@ -1,15 +1,10 @@
 class Board:
     def __init__(self, size=9):
         self.size = size
-        self.board = {}
-        for i in range(size ** 2):
-            self.board[i] = 0
+        self.board = numpy.zeros([self.size, self.size])
 
     def __repr__(self):
-        for i in range(self.size ** 2):
-            print(self.board[i], end="")
-            if (i + 1) % self.size == 0:
-                print()
+        print(self.board)
 
 
 class Tree:
